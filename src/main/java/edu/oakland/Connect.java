@@ -71,9 +71,8 @@ public class Connect {
     @Cacheable()
     @RequestMapping("/getData")
     public String getData() {
-        logger.error("oakland");
         ValueOperations<String, String> ops = this.template.opsForValue();
-        String key = "foo";
+        String key = "oakland";
         if(this.template.hasKey(key)) {
             logger.error(ops.get(key));
         }
