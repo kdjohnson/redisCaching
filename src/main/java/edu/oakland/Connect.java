@@ -58,8 +58,8 @@ public class Connect {
 
 
     
-    @RequestMapping("/test")
-    public String test() {
+    @RequestMapping("/sendData")
+    public String sendData() {
         ValueOperations<String, String> ops = this.template.opsForValue();
         String key = "oakland";
         if(!this.template.hasKey(key)) {
